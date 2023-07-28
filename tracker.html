@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Tracker</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <![endif]-->
+    <style>
+   article, aside, details, figcaption, figure, footer, header,
+   hgroup, menu, nav, section { display: block; }
+  </style>
+</head>
+<body>
+
+<header class="layouts">
+    <nav>
+        <ul class="top-menu">
+
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+
+            <span class="ES"><a href="./index.html">ENGLISH SOCIETY</a></span>
+        </ul>
+
+<br><br><h1 class="ES" id="ES3">CALCULATE AND TRACK YOUR PROGRESS</h1><br><br>
+    </nav>
+</header>
+
+<h2 class="motivational">CALCULATOR OF LEARNING HOURS</h2>
+
+<div class="container">
+    <div class="page" id="page1">
+        <h3 class="motivational">We need some information here...</h3>
+        <form class="calculator_form" id="calc_form" onsubmit="return false">
+            <div class="relContainer"><label for="current lvl">Your current level </label><select name="current lvl" id="current lvl" class="saveFiled"><option value="starter">starter</option><option value="A1">A1</option><option value="A2">A2</option><option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option></select></div>
+            <div class="relContainer"><label for="target lvl">Your target level </label><select name="target lvl" id="target lvl" class="saveFiled"><option value="C2">C2</option><option value="C1">C1</option><option value="B2">B2</option><option value="B1">B1</option><option value="A2">A2</option><option value="A1">A1</option></select></div>
+            <div class="relContainer"><label for="Times a week">How often is it comfortable for you to study? </label><select name="Times a week" id="Times a week" class="saveFiled"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select> times a week</div>
+            <div class="relContainer"><label for="Lesson length">Lesson length </label><select name="Lesson length" id="Lesson length" class="saveFiled"><option value="1.5">1.5</option><option value="1">1</option></select> hours</div>
+            <div class="relContainer"><label for="lessons attended">How many lessons have you already attended at your current level? </label><input type="number" min="0" max="1450" value="0" size="4" name="lessons attended" id="lessons attended" class="saveFiled" placeholder="Number only"> lessons</div>
+            <div class="relContainer"><label for="Homework">How much time do you usually spend on your homework? </label><select name="Homework" id="Homework" class="saveFiled"><option value="0 hours">0</option><option value="0.5">0.5</option><option value="1">1</option><option value="1.5">1.5</option><option value="2">2</option></select> hours</div>
+
+            <button onclick="nextPage()" class="btn_calculate" id="calc">Calculate</button>
+        </form>
+    </div>
+
+
+    <div class="page" id="page2">
+        <h3 class="motivational">Let's see what we've got</h3>
+        <div  class="calculator_form">
+        <div id="result">Here is your result</div><br>
+        <button onclick="prevPage()" class="btn_calculate" id="calcAgain">Calculate again</button>
+        </div>
+    </div>
+</div><br>
+<section>
+<div class="calculation_basis">
+    <ul>
+        <li><details><p>According to the <a href="https://www.cambridge.org/elt/blog/wp-content/uploads/2018/10/How-long-does-it-take-to-learn-a-foreign-language.pdf">guide</a>,
+            provided by Cambridge University (which is based on <a href="https://www.coe.int/en/web/language-policy/home">CEFR recommendations</a>),
+            a key part of learning is the time spent by the learner in <strong>self-study mode</strong>.
+            Not just sitting and listening to the teacher, not just watching funny TikTok clips, but focused attempts of mastering your skills.
+            <p>The self-study mode might be <strong>guided</strong> (i.e. following directions given by the teacher or doing homework)
+            or <strong>unguided</strong> (i.e. additional learning outside the classroom – either as additional learning activity initiated by the learner
+            or because they are practising using English for personal or work reasons).</p>
+            In the figures above, the attention is focused on a combination of <strong>classroom plus guided
+            self-study</strong> (homework).</p>
+
+            <summary>HOW THE HOURS ARE CALCULATED</summary></details></li>
+        <li><details><p>Try out these tests to evaluate your skills. </p>
+            <p><a href="https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4">If you love pain, read this one</a></p>
+            <p><a href="https://www.cambridgeenglish.org/test-your-english/">Take the Cambridge test</a></p>
+            <p><a href="https://www.examenglish.com/leveltest/index.php">Test your listening, grammar and vocabulary here</a></p>
+            <p><a href="https://preply.com/en/learn/english/test-your-vocab">Evaluate your vocabulary range</a></p>
+            <p><a href="https://www.efset.org/">Evaluate your reading and listening</a></p>
+            <p><a href="https://app.smalltalk2.me/">Evaluate your English via neural networks</a></p>
+            <summary>DON'T KNOW YOUR CURRENT LEVEL?</summary></details></li>
+    </ul>
+</div>
+</section>
+
+<footer>
+    <span class="ES">ENGLISH SOCIETY</span>
+    <p> </p>
+    <p class="contact" id="boldc">Contact</p>
+
+    <p span class="contact">alevabish@gmail.com</span></p>
+    <p span class="contact">Telegram: @alevabish</span></p>
+</footer>
+<script src="calculator.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

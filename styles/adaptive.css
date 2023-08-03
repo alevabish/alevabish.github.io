@@ -1,0 +1,131 @@
+@media only screen and (max-width: 1200px){
+nav{
+display: flex;
+}
+h1 {
+	font-size: 1.2em;
+	padding-inline-start: 3em;
+}
+h3{
+    font-size: 1.5em;
+}
+.layouts{
+    background-image: linear-gradient(0deg, rgba(222, 164, 30, 0) 1%, rgba(246, 242, 234,0)), url("../images/headerimg Tablet.jpg");
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+	.quotationblock{
+	color:#f6f2ea;
+	background-color:#dea41e;
+	padding: 3em;
+
+	font-size: 1.4em;
+	margin: auto;
+	}
+	#quotation{
+		text-align: center;
+		font-weight: 600;
+		font-size: 2rem;
+	}
+	.quotationblock:hover{
+    cursor: pointer;
+	background-color:#dea41e;
+        color: #f6f2ea;
+        text-shadow: 2px 2px 2px #a66141;
+        transition:0s;
+        border-radius: 0%;
+        margin: auto;
+   }
+.quotationblock:not(:hover) {
+
+}
+.spoilers{
+		display: block;
+		width: 90%;
+		margin:auto;
+		padding-bottom: 2em;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0em;
+	}
+	.serviceheader{
+    	width: 90%;
+            text-align: center;
+    		display: inline-block;
+    		margin: 1em;
+    		margin-bottom: 0em;
+    	}
+    	.serviceheader h1{
+    		padding-inline-start: 0em;
+    	}
+	.top-menu{
+
+	    display: block;
+    	position: static;
+    	padding-inline-start: 2em;
+    	margin-top: 0em;
+    }
+    .top-menu a{
+    	color:#000000;
+    }
+    .top-menu li {
+    	font-size: 1.7rem;
+    	text-align: center;
+    	display: inline;
+    	margin-top: 1em;
+
+    }
+.serviceheader{
+		font-size: 1.2em;
+	}
+	.margins{
+	        margin: 0 auto;
+
+    		}
+
+	.about{
+	display: block;
+    		margin: auto;
+    		margin-left: 0.7em;
+    		font-size: 1.5em;
+    		text-align: center;
+    	}
+
+    	.about img {
+            display: block;
+            float: center;
+            margin: auto;
+            padding:2em;
+            border-radius: 7%;
+            vertical-align: center;
+    	}
+    	.serviceheader{
+        		vertical-align: top;
+        		top:1em;
+        		display: inline-block;
+        		margin: 3em;
+        	}
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 480px){
+html, body{
+font-size: 14px;
+}
+h1 {
+	font-size: 1.2em;
+	padding-inline-start: 3em;
+}
+h3{
+    font-size: 1.5em;
+}
+}
